@@ -1,0 +1,89 @@
+body {
+    margin: auto 0;
+    background: rgb(6, 133, 152);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keys {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+h2 {
+    border-radius: 10%;
+    background: blue;
+    color: white;
+    margin: 2px;
+    padding: 10px;
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+}
+
+.scaleInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.minormajor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.scaleChoice{
+    background: greenyellow;
+    color: black;
+}
+
+h3 {
+
+    border-radius: 10%;
+    background: blue;
+    color: white;
+    margin: 2px;
+    padding: 10px;
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.noteValue {
+    color: white;
+}
+
+.chordValue {
+    color: rgb(255, 128, 0);
+}
+
+.circleParent{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleimg{
+    width: 400px;
+    height: auto;
+}
