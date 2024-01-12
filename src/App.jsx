@@ -23,7 +23,6 @@ function App() {
         const synth = new Tone.PolySynth().toDestination();
         // const now = Tone.now();
 
-
         /*--------------------------------------------------------------------*/
 
         // HANDLE ALL CHORDS IN C
@@ -404,12 +403,11 @@ function App() {
             }
         }
 
-
         /*--------------------------------------------------------------------*/
 
         // HANDLE ALL CHORDS IN E
 
-        // handle E chord 1 
+        // handle E chord 1
         if (noteValue === "E" && e.key === "1") {
             if (chordValue === "minor") {
                 synth.triggerAttackRelease(["E3", "G3", "B3", "D4"], "4n");
@@ -503,7 +501,7 @@ function App() {
 
         // HANDLE ALL CHORDS IN F
 
-        // handle F chord 1 
+        // handle F chord 1
         if (noteValue === "F" && e.key === "1") {
             if (chordValue === "minor") {
                 synth.triggerAttackRelease(["F3", "G#3", "C4", "D#4"], "4n");
@@ -594,12 +592,11 @@ function App() {
             }
         }
 
-
         /*--------------------------------------------------------------------*/
 
         // HANDLE ALL CHORDS IN F#/Gb
 
-        // handle F#/Gb chord 1 
+        // handle F#/Gb chord 1
         if (noteValue === "F#/Gb" && e.key === "1") {
             if (chordValue === "minor") {
                 synth.triggerAttackRelease(["F#3", "A3", "C#4", "E4"], "4n");
@@ -690,12 +687,11 @@ function App() {
             }
         }
 
-
         /*--------------------------------------------------------------------*/
 
         // HANDLE ALL CHORDS IN G
 
-        // handle G chord 1 
+        // handle G chord 1
         if (noteValue === "G" && e.key === "1") {
             if (chordValue === "minor") {
                 synth.triggerAttackRelease(["G3", "A#3", "D4", "F4"], "4n");
@@ -786,12 +782,11 @@ function App() {
             }
         }
 
-
         /*--------------------------------------------------------------------*/
 
         // HANDLE ALL CHORDS IN G#/Ab
 
-        // handle G#/Ab chord 1 
+        // handle G#/Ab chord 1
         if (noteValue === "G#/Ab" && e.key === "1") {
             if (chordValue === "minor") {
                 synth.triggerAttackRelease(["G#3", "B3", "D#4", "F#4"], "4n");
@@ -882,12 +877,11 @@ function App() {
             }
         }
 
-
         /*--------------------------------------------------------------------*/
 
         // HANDLE ALL CHORDS IN A
 
-        // handle A chord 1 
+        // handle A chord 1
         if (noteValue === "A" && e.key === "1") {
             if (chordValue === "minor") {
                 synth.triggerAttackRelease(["A3", "C4", "E4", "G4"], "4n");
@@ -978,12 +972,11 @@ function App() {
             }
         }
 
-
         /*--------------------------------------------------------------------*/
 
         // HANDLE ALL CHORDS IN A#/Bb
 
-        // handle A#/Bb chord 1 
+        // handle A#/Bb chord 1
         if (noteValue === "A#/Bb" && e.key === "1") {
             if (chordValue === "minor") {
                 synth.triggerAttackRelease(["A#3", "C#4", "F4", "G#4"], "4n");
@@ -1074,12 +1067,11 @@ function App() {
             }
         }
 
-
         /*--------------------------------------------------------------------*/
 
         // HANDLE ALL CHORDS IN B
 
-        // handle B chord 1 
+        // handle B chord 1
         if (noteValue === "B" && e.key === "1") {
             if (chordValue === "minor") {
                 synth.triggerAttackRelease(["B3", "D4", "F#4", "A4"], "4n");
