@@ -873,7 +873,7 @@ function App() {
             } else if (chordValue === "major") {
                 synth.triggerAttackRelease(["G3", "A#3", "C#4", "F4"], "4n");
                 setWhichChord("F## half-diminished 7th");
-                setChordNotes("G - A# - C# - F");
+                setChordNotes("G - A# - C# - f");
             }
         }
 
