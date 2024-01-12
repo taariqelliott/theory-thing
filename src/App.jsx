@@ -83,11 +83,11 @@ function App() {
         // handle C chord 5
         if (noteValue === "C" && e.key === "5") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["G4", "A#4", "D5", "F5"], "4n");
+                synth.triggerAttackRelease(["G3", "A#3", "D4", "F4"], "4n");
                 setWhichChord("G minor 7th");
                 setChordNotes("G - A# - D - F");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["G4", "B4", "D5", "F5"], "4n");
+                synth.triggerAttackRelease(["G3", "B3", "D4", "F4"], "4n");
                 setWhichChord("G dominant 7th");
                 setChordNotes("G - B - D - F");
             }
@@ -96,11 +96,11 @@ function App() {
         // handle C chord 6
         if (noteValue === "C" && e.key === "6") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["G#4", "C5", "D#5", "G5"], "4n");
+                synth.triggerAttackRelease(["G#3", "C4", "D#4", "G4"], "4n");
                 setWhichChord("G# major 7th");
                 setChordNotes("A♭ - C - D# - G");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["A4", "C5", "E5", "G5"], "4n");
+                synth.triggerAttackRelease(["A3", "C4", "E4", "G4"], "4n");
                 setWhichChord("A minor 7th");
                 setChordNotes("A - C - E - G");
             }
@@ -109,11 +109,11 @@ function App() {
         // handle C chord 7
         if (noteValue === "C" && e.key === "7") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["A#4", "D5", "F5", "G#5"], "4n");
+                synth.triggerAttackRelease(["A#3", "D4", "F4", "G#4"], "4n");
                 setWhichChord("A# dominant 7th");
                 setChordNotes("A# - D - F - G#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["B4", "D5", "F5", "A5"], "4n");
+                synth.triggerAttackRelease(["B3", "D4", "F4", "A4"], "4n");
                 setWhichChord("B half-diminished 7th");
                 setChordNotes("B - D - F - A");
             }
@@ -975,6 +975,198 @@ function App() {
                 synth.triggerAttackRelease(["G#3", "B3", "D4", "F#4"], "4n");
                 setWhichChord("G# half-diminished 7th");
                 setChordNotes("G# - B - D - F#");
+            }
+        }
+
+
+        /*--------------------------------------------------------------------*/
+
+        // HANDLE ALL CHORDS IN A#/Bb
+
+        // handle A#/Bb chord 1 
+        if (noteValue === "A#/Bb" && e.key === "1") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["A#3", "C#4", "F4", "G#4"], "4n");
+                setWhichChord("A minor 7th");
+                setChordNotes("A - C - E - G");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["A#3", "D4", "F4", "A4"], "4n");
+                setWhichChord("A# major 7th");
+                setChordNotes("A# - D - F - A");
+            }
+        }
+
+        // handle A#/Bb chord 2
+        if (noteValue === "A#/Bb" && e.key === "2") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["C3", "D#4", "F#4", "A#4"], "4n");
+                setWhichChord("B# half-diminished 7th");
+                setChordNotes("B# - D# - F# - A#");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["C4", "D#4", "G4", "A#4"], "4n");
+                setWhichChord("B# minor 7th");
+                setChordNotes("B# - D# - G - A#");
+            }
+        }
+
+        // handle A#/Bb chord 3
+        if (noteValue === "A#/Bb" && e.key === "3") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["C#4", "F4", "G#4", "C5"], "4n");
+                setWhichChord("C# major 7th");
+                setChordNotes("C# - F - G# - C");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["D4", "F4", "A4", "C5"], "4n");
+                setWhichChord("C## minor 7th");
+                setChordNotes("D - F - A - C");
+            }
+        }
+
+        // handle A#/Bb chord 4
+        if (noteValue === "A#/Bb" && e.key === "4") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["D#4", "F#4", "A#4", "C#5"], "4n");
+                setWhichChord("D# minor 7th");
+                setChordNotes("D# - F# - A# - C#");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["D#4", "G4", "A#4", "D5"], "4n");
+                setWhichChord("D# major 7th");
+                setChordNotes("D# - G - A# - D");
+            }
+        }
+
+        // handle A#/Bb chord 5
+        if (noteValue === "A#/Bb" && e.key === "5") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["F4", "G#4", "C5", "D#5"], "4n");
+                setWhichChord("E# minor 7th");
+                setChordNotes("E# - G# - C - D#");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["F4", "A4", "C5", "D#5"], "4n");
+                setWhichChord("E# dominant 7th");
+                setChordNotes("E# - A - C - D#");
+            }
+        }
+
+        // handle A#/Bb chord 6
+        if (noteValue === "A#/Bb" && e.key === "6") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["F#3", "A#3", "C#4", "F4"], "4n");
+                setWhichChord("F# major 7th");
+                setChordNotes("F# - A# - C# - F");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["G3", "A#3", "D4", "F4"], "4n");
+                setWhichChord("F## minor 7th");
+                setChordNotes("G - A# - D - F");
+            }
+        }
+
+        // handle A#/Bb chord 7
+        if (noteValue === "A#/Bb" && e.key === "7") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["G#3", "C4", "D#4", "F#4"], "4n");
+                setWhichChord("G# dominant 7th");
+                setChordNotes("G# - C - D# - F#");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["A3", "C4", "D#4", "G4"], "4n");
+                setWhichChord("G## half-diminished 7th");
+                setChordNotes("A - C - D# - G");
+            }
+        }
+
+
+        /*--------------------------------------------------------------------*/
+
+        // HANDLE ALL CHORDS IN B
+
+        // handle B chord 1 
+        if (noteValue === "B" && e.key === "1") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["B3", "D4", "F#4", "A4"], "4n");
+                setWhichChord("B minor 7th");
+                setChordNotes("B - D - F# - A");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["B3", "D#4", "F#4", "A#4"], "4n");
+                setWhichChord("B major 7th");
+                setChordNotes("B - D# - F# - A#");
+            }
+        }
+
+        // handle B chord 2
+        if (noteValue === "B" && e.key === "2") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["C#4", "E4", "G4", "B4"], "4n");
+                setWhichChord("C# half-diminished 7th");
+                setChordNotes("C# - E - G - B");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["C#4", "E4", "G#4", "B4"], "4n");
+                setWhichChord("C# minor 7th");
+                setChordNotes("C# - E - G# - B");
+            }
+        }
+
+        // handle B chord 3
+        if (noteValue === "B" && e.key === "3") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["D4", "F#4", "A4", "C#5"], "4n");
+                setWhichChord("D major 7th");
+                setChordNotes("D - F# - A - C#");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["D#4", "F#4", "A#4", "C#5"], "4n");
+                setWhichChord("D# minor 7th");
+                setChordNotes("D# - F# - A# - C#");
+            }
+        }
+
+        // handle B chord 4
+        if (noteValue === "B" && e.key === "4") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["E4", "G4", "B4", "D5"], "4n");
+                setWhichChord("E minor 7th");
+                setChordNotes("E - G - B - D");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["E4", "G#4", "B4", "D#5"], "4n");
+                setWhichChord("E major 7th");
+                setChordNotes("E - G# - B - D#");
+            }
+        }
+
+        // handle B chord 5
+        if (noteValue === "B" && e.key === "5") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["F#3", "A3", "C#4", "E4"], "4n");
+                setWhichChord("E# minor 7th");
+                setChordNotes("E# - G# - C - D#");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["F#3", "A#3", "C#4", "E4"], "4n");
+                setWhichChord("F# dominant 7th");
+                setChordNotes("F# - A# - C# - E");
+            }
+        }
+
+        // handle B chord 6
+        if (noteValue === "B" && e.key === "6") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["G3", "B3", "D4", "F#4"], "4n");
+                setWhichChord("G major 7th");
+                setChordNotes("G - B - D - F#");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["G#3", "B3", "D#4", "F#4"], "4n");
+                setWhichChord("G# minor 7th");
+                setChordNotes("G# - B - D# - F#");
+            }
+        }
+
+        // handle B chord 7
+        if (noteValue === "B" && e.key === "7") {
+            if (chordValue === "minor") {
+                synth.triggerAttackRelease(["A3", "C#4", "E4", "G4"], "4n");
+                setWhichChord("A dominant 7th");
+                setChordNotes("A - C# - E - G");
+            } else if (chordValue === "major") {
+                synth.triggerAttackRelease(["A#3", "C#4", "E4", "G#4"], "4n");
+                setWhichChord("A# half-diminished 7th");
+                setChordNotes("A# - C# - E - G#");
             }
         }
     };
