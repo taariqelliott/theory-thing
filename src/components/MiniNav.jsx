@@ -4,7 +4,7 @@ import './MiniNav.css'
 const MiniNav = () => {
     return (
         <div className='mininav'>
-            <a href="/desktop" style={{ marginRight: '10px' }}>
+            <a href="/" style={{ marginRight: '10px' }}>
                 <h4 className='mininav-h4'>Desktop Version</h4>
             </a>
 
