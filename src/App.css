@@ -1,22 +1,62 @@
 body {
     margin: auto 0;
-    background: rgb(6, 133, 152);
+    background: rgb(170, 191, 132);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: rgb(78, 0, 75);
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    display: table;
+    margin: 20px auto 20px auto;
+    padding: 10px 20px;
+    border: rgb(255, 255, 255) solid 3px;
+    border-radius: 15px;
+
 }
 
 .keys {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     align-items: center;
     overflow: scroll;
+}
 
+.mobile-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.chord-button {
+    border-radius: 10%;
+    background: black;
+    color: white;
+    margin: 2px;
+    padding: 10px;
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+    border: none;
+    border: rgb(255, 255, 255) solid 1px;
+}
+
+.chord-button:hover {
+    background-color: rgb(161, 65, 81);
+}
+
+.chord-button:active {
+    background-color: red;
 }
 
 h2 {
@@ -28,6 +68,15 @@ h2 {
     cursor: pointer;
     width: 70px;
     text-align: center;
+
+}
+
+h2:hover {
+    background-color: rgb(0, 0, 118);
+}
+
+h2:active {
+    background-color: orangered;
 }
 
 .scaleInfo {
@@ -35,7 +84,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .minormajor {
@@ -43,16 +92,24 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.scaleChoice{
-    background: greenyellow;
-    color: black;
+.scaleChoice {
+    border: rgb(255, 255, 255) solid 3px;
+    background: rgb(78, 0, 75);
+    color: white;
+}
+
+.scaleChoice:hover {
+    background: rgb(255, 81, 0);
+}
+
+.scaleChoice:active {
+    background-color: pink;
 }
 
 h3 {
-
     border-radius: 10%;
     background: blue;
     color: white;
@@ -69,21 +126,20 @@ h3 {
 }
 
 .noteValue {
-    color: white;
+    color: blue;
 }
 
 .chordValue {
-    color: rgb(255, 128, 0);
+    color: rgb(123, 1, 72);
 }
 
-.circleParent{
-    
+.circleParent {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.circleimg{
-    width: 400px;
+.circleimg {
+    width: 55%;
     height: auto;
 }
