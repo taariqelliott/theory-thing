@@ -1219,6 +1219,8 @@ function Desktop() {
                 </h3>
             </div>
 
+            <h4 className="select-scale">Press number keys 1 - 7 to hear the designated chord in selected scale </h4>
+
             <h1 className="scaleInfo">
                 Scale:&nbsp;<span className="noteValue">{noteValue}</span>&nbsp;
                 <span className="chordValue">{chordValue}</span>
