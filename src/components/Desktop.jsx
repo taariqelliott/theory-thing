@@ -1224,8 +1224,8 @@ function Desktop() {
                 <span className="chordValue">{chordValue}</span>
             </h1>
 
-            <h2 className="scaleInfo">{whichChord}</h2>
-            <h2 className="scaleInfo">Notes played: [{chordNotes}]</h2>
+            <h1 className="scaleInfo">{whichChord}</h1>
+            <h1 className="scaleInfo">Notes played: [{chordNotes}]</h1>
 
             <div className="circleParent">
                 <img
