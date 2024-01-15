@@ -1,3 +1,15 @@
+:root {
+    --blue: #2292a4;
+    --white: #f5efed;
+    --green: #bdbf09;
+    --green-hover: #0c841c;
+    --orange: #d96c06;
+    --orange-hover: #824104;
+    --black: #15020e;
+    --hover: #a14151;
+    --hover-active: #5e2630;
+}
+
 .mininav{
     display: flex;
     align-items: center;
@@ -10,14 +22,15 @@ a{
 }
 
 .mininav-h4{
-    background-color: black;
+    background-color: var(--black);
     padding: 15px;
     border-radius: 25px;
-    border: solid white 3px;
+    border: solid var(--white) 3px;
 }
 
 .mininav-h4:hover{
-    background-color:  rgb(78, 0, 75);
+    background-color:  var(--green);
+    color: var(--black);
     
 }
 

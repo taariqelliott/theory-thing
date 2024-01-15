@@ -1,27 +1,32 @@
 :root {
-    --main-bg-color: cornflowerblue;
-    --main-bg-color: cornflowerblue;
-    --main-bg-color: cornflowerblue;
-  }
+    --blue: #2292a4;
+    --white: #f5efed;
+    --green: #bdbf09;
+    --green-hover: #0c841c;
+    --orange: #d96c06;
+    --orange-hover: #824104;
+    --black: #15020e;
+    --hover: #a14151;
+    --hover-active: #5e2630;
+}
 
 
 body {
     margin: auto 0;
-    background: rgb(170, 191, 132);
+    background: var(--blue);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .title {
-    background: rgb(78, 0, 75);
-    color: white;
+    background: var(--orange);
+    color: var(--white);
     font-size: 70px;
     text-align: center;
     display: table;
     margin: 20px auto 20px auto;
     padding: 10px 20px;
-    border: rgb(255, 255, 255) solid 3px;
+    border: var(--white) solid 3px;
     border-radius: 15px;
-
 }
 
 .keys {
@@ -46,30 +51,30 @@ body {
 }
 
 .chord-button {
-    border-radius: 10%;
-    background: blue;
-    color: white;
+    border-radius: 10px;
+    background: var(--orange);
+    color: var(--white);
     margin: 2px;
     padding: 10px;
     cursor: pointer;
     width: 70px;
     text-align: center;
-    border: none;
-    border: rgb(255, 255, 255) solid 1px;
+
+    border: var(--white) solid 3px;
 }
 
 .chord-button:hover {
-    background-color: rgb(161, 65, 81);
+    background-color: var(--hover);
 }
 
 .chord-button:active {
-    background-color: red;
+    background-color: var(--hover-active);
 }
 
 h2 {
     border-radius: 10%;
-    background: blue;
-    color: white;
+    background: var(--green);
+    color: var(--black);
     margin: 2px;
     padding: 10px;
     cursor: pointer;
@@ -79,11 +84,12 @@ h2 {
 }
 
 h2:hover {
-    background-color: rgb(0, 0, 118);
+    background-color: var(--green-hover);
+    color: var(--black);
 }
 
 h2:active {
-    background-color: orangered;
+    background-color: var(--hover);
 }
 
 .scaleInfo {
@@ -93,6 +99,9 @@ h2:active {
     align-items: center;
     margin-top: 20px;
     font-size: 20px;
+    color: var();
+
+
 }
 
 .minormajor {
@@ -104,17 +113,18 @@ h2:active {
 }
 
 .scaleChoice {
-    border: rgb(255, 255, 255) solid 3px;
-    background: rgb(78, 0, 75);
+    border: var(--white) solid 3px;
+    background: var(--orange);
     color: white;
 }
 
 .scaleChoice:hover {
-    background: rgb(255, 81, 0);
+    background: var(--hover);
 }
 
+
 .scaleChoice:active {
-    background-color: pink;
+    background-color: var(--hover-active);
 }
 
 h3 {
@@ -134,11 +144,14 @@ h3 {
 }
 
 .noteValue {
-    color: blue;
+    color: var(--white);
 }
 
 .chordValue {
-    color: rgb(123, 1, 72);
+    color: var(--black);
+    background: var(--orange);
+    padding: 3px;
+    border-radius: 20%;
 }
 
 .circleParent {
@@ -154,11 +167,35 @@ h3 {
 
 .select-scale {
     text-align: center;
-    background:rgb(0, 0, 0);
+    background: var(--black);
     display: table;
     margin: 20px auto 20px auto;
     padding: 10px;
     border-radius: 25px;
-    color: rgb(170, 191, 132);
+    color: var(--blue);
     border: solid;
+}
+
+.which-notes {
+    text-align: center;
+    display: table;
+    margin: 20px auto 20px auto;
+    font-size: 20px;
+    padding: 13px;
+    border-radius: 520px;
+    color: var(--black);
+    background: var(--green);
+    border: var(--black) 4px solid;
+}
+
+.which-chord {
+    text-align: center;
+    display: table;
+    margin: 20px auto 20px auto;
+    font-size: 20px;
+    background: var(--orange);
+    padding: 13px;
+    border-radius: 20px;
+    color: var(--white);
+    border: var(--black) 4px solid;
 }
