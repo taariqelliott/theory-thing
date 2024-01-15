@@ -59,7 +59,7 @@ body {
     cursor: pointer;
     width: 70px;
     text-align: center;
-
+font-weight: bolder;
     border: var(--white) solid 3px;
 }
 
