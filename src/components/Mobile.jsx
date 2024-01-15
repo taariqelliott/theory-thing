@@ -10,6 +10,7 @@ function Mobile() {
     const [whichChord, setWhichChord] = useState("");
     const [chordNotes, setChordNotes] = useState("");
 
+
     const updateNoteValue = (e) => {
         setNoteValue(e.target.innerText);
     };
@@ -18,16 +19,23 @@ function Mobile() {
         setChordValue(e.target.innerText);
     };
 
+    
     const playChord = (button) => {
+
+        // declare a new variable that holds the synth engine
         const synth = new Tone.PolySynth().toDestination();
+
+        /*--------------------------------------------------------------------*/
+
+        // HANDLE ALL CHORDS IN C
 
         if (noteValue === "C" && button === "1") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["C4", "D#4", "G4", "A#4"], "4n");
+                synth.triggerAttackRelease(["C3", "D#3", "G3", "A#3"], "4n");
                 setWhichChord("C minor 7th");
                 setChordNotes("C - D# - G - A#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["C4", "E4", "G4", "B4"], "4n");
+                synth.triggerAttackRelease(["C3", "E3", "G3", "B3"], "4n");
                 setWhichChord("C major 7th");
                 setChordNotes("C - E - G - B");
             }
@@ -35,11 +43,11 @@ function Mobile() {
 
         if (noteValue === "C" && button === "2") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["D4", "F4", "G#4", "C5"], "4n");
+                synth.triggerAttackRelease(["D3", "F3", "G#3", "C4"], "4n");
                 setWhichChord("D half-diminished 7th");
                 setChordNotes("D - F - G# - C");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["D4", "F4", "A4", "C5"], "4n");
+                synth.triggerAttackRelease(["D3", "F3", "A3", "C4"], "4n");
                 setWhichChord("D minor 7th");
                 setChordNotes("D - F - A - C");
             }
@@ -47,11 +55,11 @@ function Mobile() {
 
         if (noteValue === "C" && button === "3") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["D#4", "G4", "A#4", "D5"], "4n");
+                synth.triggerAttackRelease(["D#3", "G3", "A#3", "D4"], "4n");
                 setWhichChord("D# major 7th");
                 setChordNotes("D# - G - A# - D");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["E4", "G4", "B4", "D5"], "4n");
+                synth.triggerAttackRelease(["E3", "G3", "B3", "D4"], "4n");
                 setWhichChord("E minor 7th");
                 setChordNotes("E - G - B - D");
             }
@@ -59,11 +67,11 @@ function Mobile() {
 
         if (noteValue === "C" && button === "4") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["F4", "G#4", "C5", "D#5"], "4n");
+                synth.triggerAttackRelease(["F3", "G#3", "C4", "D#4"], "4n");
                 setWhichChord("F minor 7th");
                 setChordNotes("F - G# - C - D#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["F4", "A4", "C5", "E5"], "4n");
+                synth.triggerAttackRelease(["F3", "A3", "C4", "E4"], "4n");
                 setWhichChord("F major 7th");
                 setChordNotes("F - A - C - E");
             }
@@ -112,11 +120,11 @@ function Mobile() {
         // handle C# chord 1 both
         if (noteValue === "C#/Db" && button === "1") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["C#4", "E4", "G#4", "B4"], "4n");
+                synth.triggerAttackRelease(["C#3", "E3", "G#3", "B3"], "4n");
                 setWhichChord("C# minor 7th");
                 setChordNotes("C# - E - G# - B");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["C#4", "F4", "G#4", "C5"], "4n");
+                synth.triggerAttackRelease(["C#3", "F3", "G#3", "C4"], "4n");
                 setWhichChord("C# major 7th");
                 setChordNotes("C# - F - G# - C");
             }
@@ -125,11 +133,11 @@ function Mobile() {
         // handle C# chord 2
         if (noteValue === "C#/Db" && button === "2") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["D#4", "F#4", "A4", "C#5"], "4n");
+                synth.triggerAttackRelease(["D#3", "F#3", "A3", "C#4"], "4n");
                 setWhichChord("D# half-diminished 7th");
                 setChordNotes("D# - F# - A - C#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["D#4", "F#4", "A#4", "C#5"], "4n");
+                synth.triggerAttackRelease(["D#3", "F#3", "A#3", "C#4"], "4n");
                 setWhichChord("D# minor 7th");
                 setChordNotes("D# - F# - A# - C#");
             }
@@ -138,11 +146,11 @@ function Mobile() {
         // handle C# chord 3
         if (noteValue === "C#/Db" && button === "3") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["E4", "G#4", "B4", "D#5"], "4n");
+                synth.triggerAttackRelease(["E3", "G#3", "B3", "D#4"], "4n");
                 setWhichChord("E major 7th");
                 setChordNotes("E - G# - B - D#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["F4", "G#4", "C5", "D#5"], "4n");
+                synth.triggerAttackRelease(["F3", "G#3", "C4", "D#4"], "4n");
                 setWhichChord("E# minor 7th");
                 setChordNotes("F - G# - C - D#");
             }
@@ -151,11 +159,11 @@ function Mobile() {
         // handle C# chord 4
         if (noteValue === "C#/Db" && button === "4") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["F#4", "A4", "C#5", "E5"], "4n");
+                synth.triggerAttackRelease(["F#3", "A3", "C#4", "E4"], "4n");
                 setWhichChord("F# minor 7th");
                 setChordNotes("F# - A - C# - E");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["F#4", "A#4", "C#5", "F5"], "4n");
+                synth.triggerAttackRelease(["F#3", "A#3", "C#4", "F4"], "4n");
                 setWhichChord("F# major 7th");
                 setChordNotes("F# - A# - C# - F");
             }
@@ -164,11 +172,11 @@ function Mobile() {
         // handle C# chord 5
         if (noteValue === "C#/Db" && button === "5") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["G#4", "B4", "D#5", "F#5"], "4n");
+                synth.triggerAttackRelease(["G#3", "B3", "D#4", "F#4"], "4n");
                 setWhichChord("G# minor 7th");
                 setChordNotes("G# - B - D# - F#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["G#4", "C5", "D#5", "F#5"], "4n");
+                synth.triggerAttackRelease(["G#3", "C4", "D#4", "F#4"], "4n");
                 setWhichChord("G# dominant 7th");
                 setChordNotes("G# - C - D# - F#");
             }
@@ -177,11 +185,11 @@ function Mobile() {
         // handle C# chord 6
         if (noteValue === "C#/Db" && button === "6") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["A4", "C#5", "E5", "G#5"], "4n");
+                synth.triggerAttackRelease(["A3", "C#4", "E4", "G#4"], "4n");
                 setWhichChord("A major 7th");
                 setChordNotes("A - C# - E - G#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["A#4", "C#5", "F5", "G#5"], "4n");
+                synth.triggerAttackRelease(["A#3", "C#4", "F4", "G#4"], "4n");
                 setWhichChord("A# minor 7th");
                 setChordNotes("A# - C# - F - G#");
             }
@@ -190,11 +198,11 @@ function Mobile() {
         // handle C# chord 7
         if (noteValue === "C#/Db" && button === "7") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["B4", "D#5", "F#5", "A5"], "4n");
+                synth.triggerAttackRelease(["B4", "D#4", "F#4", "A4"], "4n");
                 setWhichChord("B dominant 7th");
                 setChordNotes("B - D# - F# - A");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["C5", "D#5", "F#5", "A#5"], "4n");
+                synth.triggerAttackRelease(["C4", "D#4", "F#4", "A#4"], "4n");
                 setWhichChord("B# half-diminished 7th");
                 setChordNotes("C - D# - F# - A#");
             }
@@ -207,11 +215,11 @@ function Mobile() {
         // handle chord 1 both
         if (noteValue === "D" && button === "1") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["D4", "F4", "A4", "C5"], "4n");
+                synth.triggerAttackRelease(["D3", "F3", "A3", "C4"], "4n");
                 setWhichChord("D minor 7th");
                 setChordNotes("D - F - A - C");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["D4", "F#4", "A4", "C#5"], "4n");
+                synth.triggerAttackRelease(["D3", "F#3", "A3", "C#4"], "4n");
                 setWhichChord("D major 7th");
                 setChordNotes("D - F# - A# - C#");
             }
@@ -220,11 +228,11 @@ function Mobile() {
         // handle D chord 2
         if (noteValue === "D" && button === "2") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["E4", "G4", "A#4", "D5"], "4n");
+                synth.triggerAttackRelease(["E3", "G3", "A#3", "D4"], "4n");
                 setWhichChord("E half-diminished 7th");
                 setChordNotes("E - G - A# - D");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["E4", "G4", "B4", "D5"], "4n");
+                synth.triggerAttackRelease(["E3", "G3", "B3", "D4"], "4n");
                 setWhichChord("E minor 7th");
                 setChordNotes("E - G - B - D");
             }
@@ -233,11 +241,11 @@ function Mobile() {
         // handle D chord 3
         if (noteValue === "D" && button === "3") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["F4", "A4", "C5", "E5"], "4n");
+                synth.triggerAttackRelease(["F3", "A3", "C4", "E4"], "4n");
                 setWhichChord("F major 7th");
                 setChordNotes("F - A - C - E");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["F#4", "A4", "C#5", "E5"], "4n");
+                synth.triggerAttackRelease(["F#3", "A3", "C#4", "E4"], "4n");
                 setWhichChord("F# minor 7th");
                 setChordNotes("F# - A - C# - E");
             }
@@ -246,11 +254,11 @@ function Mobile() {
         // handle D chord 4
         if (noteValue === "D" && button === "4") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["G4", "A#4", "D5", "F5"], "4n");
+                synth.triggerAttackRelease(["G3", "A#3", "D4", "F4"], "4n");
                 setWhichChord("G minor 7th");
                 setChordNotes("G - A# - D - F");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["G4", "B4", "D5", "F#5"], "4n");
+                synth.triggerAttackRelease(["G3", "B3", "D4", "F#4"], "4n");
                 setWhichChord("G major 7th");
                 setChordNotes("G - B - D - F#");
             }
@@ -259,11 +267,11 @@ function Mobile() {
         // handle D chord 5
         if (noteValue === "D" && button === "5") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["A4", "C5", "E5", "G5"], "4n");
+                synth.triggerAttackRelease(["A3", "C4", "E4", "G4"], "4n");
                 setWhichChord("A minor 7th");
                 setChordNotes("A - C - E - G");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["A4", "C#5", "E5", "G5"], "4n");
+                synth.triggerAttackRelease(["A3", "C#4", "E4", "G4"], "4n");
                 setWhichChord("A dominant 7th");
                 setChordNotes("A - C# - E - G");
             }
@@ -272,11 +280,11 @@ function Mobile() {
         // handle D chord 6
         if (noteValue === "D" && button === "6") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["A#4", "D5", "F5", "A5"], "4n");
+                synth.triggerAttackRelease(["A#3", "D4", "F4", "A4"], "4n");
                 setWhichChord("Bb major 7th");
-                setChordNotes("A# - D - F - A5");
+                setChordNotes("A# - D - F - A");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["B4", "D5", "F#5", "A5"], "4n");
+                synth.triggerAttackRelease(["B3", "D4", "F#4", "A4"], "4n");
                 setWhichChord("B minor 7th");
                 setChordNotes("B - D - F# - A");
             }
@@ -285,11 +293,11 @@ function Mobile() {
         // handle D chord 7
         if (noteValue === "D" && button === "7") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["C5", "E5", "G5", "A#5"], "4n");
+                synth.triggerAttackRelease(["C4", "E4", "G4", "A#4"], "4n");
                 setWhichChord("C dominant 7th");
                 setChordNotes("C - E - G - A#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["C#5", "E5", "G5", "B5"], "4n");
+                synth.triggerAttackRelease(["C#4", "E4", "G4", "B4"], "4n");
                 setWhichChord("C# half-diminished 7th");
                 setChordNotes("C# - E - G - B");
             }
@@ -299,92 +307,92 @@ function Mobile() {
 
         // HANDLE ALL CHORDS IN D#/Eb
 
-        // handle chord 1 both
+        // handle D#/Eb chord 1
         if (noteValue === "D#/Eb" && button === "1") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["D#4", "F#4", "A#4", "C#5"], "4n");
+                synth.triggerAttackRelease(["D#3", "F#3", "A#3", "C#4"], "4n");
                 setWhichChord("D# minor 7th");
                 setChordNotes("D# - F# - A# - C#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["D#4", "G4", "A#4", "D5"], "4n");
+                synth.triggerAttackRelease(["D#3", "G3", "A#3", "D4"], "4n");
                 setWhichChord("D# major 7th");
                 setChordNotes("D# - G - A# - D");
             }
         }
 
-        // handle D chord 2
+        // handle D#/Eb chord 2
         if (noteValue === "D#/Eb" && button === "2") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["F4", "G#4", "B4", "D#5"], "4n");
+                synth.triggerAttackRelease(["F3", "G#3", "B3", "D#4"], "4n");
                 setWhichChord("E# half-diminished 7th");
                 setChordNotes("E# - G# - B - D#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["F4", "G#4", "C5", "D#5"], "4n");
+                synth.triggerAttackRelease(["F3", "G#3", "C4", "D#4"], "4n");
                 setWhichChord("E# minor 7th");
                 setChordNotes("F - G# - C - D#");
             }
         }
 
-        // handle D chord 3
+        // handle D#/Eb chord 3
         if (noteValue === "D#/Eb" && button === "3") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["F#4", "A#4", "C#5", "F5"], "4n");
+                synth.triggerAttackRelease(["F#3", "A#3", "C#4", "F4"], "4n");
                 setWhichChord("F# major 7th");
                 setChordNotes("F# - A# - C# - F");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["G4", "A#4", "D5", "F5"], "4n");
+                synth.triggerAttackRelease(["G3", "A#3", "D4", "F4"], "4n");
                 setWhichChord("F## minor 7th");
                 setChordNotes("G - A# - D - F");
             }
         }
 
-        // handle D chord 4
+        // handle D#/Eb chord 4
         if (noteValue === "D#/Eb" && button === "4") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["G#4", "B4", "D#5", "F#5"], "4n");
+                synth.triggerAttackRelease(["G#3", "B3", "D#4", "F#4"], "4n");
                 setWhichChord("G# minor 7th");
                 setChordNotes("G# - B - D# - F#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["G#4", "C5", "D#5", "G5"], "4n");
+                synth.triggerAttackRelease(["G#3", "C4", "D#4", "G4"], "4n");
                 setWhichChord("G# major 7th");
                 setChordNotes("G# - C - D# - G");
             }
         }
 
-        // handle D chord 5
+        // handle D#/Eb chord 5
         if (noteValue === "D#/Eb" && button === "5") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["A#4", "C#5", "F5", "G#5"], "4n");
+                synth.triggerAttackRelease(["A#3", "C#4", "F4", "G#4"], "4n");
                 setWhichChord("A# minor 7th");
                 setChordNotes("A# - C# - F - G#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["A#4", "D5", "F5", "G#5"], "4n");
+                synth.triggerAttackRelease(["A#3", "D4", "F4", "G#4"], "4n");
                 setWhichChord("A# dominant 7th");
                 setChordNotes("A# - D - F - G#");
             }
         }
 
-        // handle D chord 6
+        // handle D#/Eb chord 6
         if (noteValue === "D#/Eb" && button === "6") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["B4", "D#5", "F#5", "A#5"], "4n");
+                synth.triggerAttackRelease(["B3", "D#4", "F#4", "A#4"], "4n");
                 setWhichChord("B major 7th");
                 setChordNotes("B - D# - F# - A#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["C5", "D#5", "G5", "A#5"], "4n");
+                synth.triggerAttackRelease(["C4", "D#4", "G4", "A#4"], "4n");
                 setWhichChord("B# minor 7th");
                 setChordNotes("C - D# - G - A#");
             }
         }
 
-        // handle D chord 7
+        // handle D#/Eb chord 7
         if (noteValue === "D#/Eb" && button === "7") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["C#5", "F5", "G#5", "B5"], "4n");
+                synth.triggerAttackRelease(["C#4", "F4", "G#4", "B4"], "4n");
                 setWhichChord("C# dominant 7th");
                 setChordNotes("C# - F - G# - B");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["D5", "F5", "G#5", "C6"], "4n");
+                synth.triggerAttackRelease(["D4", "F4", "G#4", "C5"], "4n");
                 setWhichChord("C## half-diminished 7th");
                 setChordNotes("D - F - G# - C");
             }
@@ -763,7 +771,7 @@ function Mobile() {
                 setWhichChord("F dominant 7th");
                 setChordNotes("F - A - C - D#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["F#3", "A3", "C4", "E4"], "4n");
+                synth.triggerAttackRelease(["F#4", "A4", "C5", "E5"], "4n");
                 setWhichChord("F# half-diminished 7th");
                 setChordNotes("F# - A - C - E");
             }
@@ -780,7 +788,7 @@ function Mobile() {
                 setWhichChord("G# minor 7th");
                 setChordNotes("G# - B - D# - F#");
             } else if (chordValue === "major") {
-                synth.triggerAttackRelease(["G#3", "C3", "D#4", "G4"], "4n");
+                synth.triggerAttackRelease(["G#3", "C4", "D#4", "G4"], "4n");
                 setWhichChord("G# major 7th");
                 setChordNotes("G# - C - D# - G");
             }
@@ -979,7 +987,7 @@ function Mobile() {
         // handle A#/Bb chord 2
         if (noteValue === "A#/Bb" && button === "2") {
             if (chordValue === "minor") {
-                synth.triggerAttackRelease(["C3", "D#4", "F#4", "A#4"], "4n");
+                synth.triggerAttackRelease(["C4", "D#4", "F#4", "A#4"], "4n");
                 setWhichChord("B# half-diminished 7th");
                 setChordNotes("B# - D# - F# - A#");
             } else if (chordValue === "major") {
@@ -1148,14 +1156,13 @@ function Mobile() {
                 setChordNotes("A# - C# - E - G#");
             }
         }
-
     };
 
     useEffect(() => {
-        document.addEventListener("keydown", playChord);
+        document.addEventListener("click", playChord);
 
         return () => {
-            document.removeEventListener("keydown", playChord);
+            document.removeEventListener("click", playChord);
         };
     }, [playChord]);
 
@@ -1192,13 +1199,27 @@ function Mobile() {
             <h4 className="select-scale">3. Press To Play Chord</h4>
 
             <div className="mobile-buttons">
-                <button className="chord-button" onClick={() => playChord("1")}>Chord 1</button>
-                <button className="chord-button" onClick={() => playChord("2")}>Chord 2</button>
-                <button className="chord-button" onClick={() => playChord("3")}>Chord 3</button>
-                <button className="chord-button" onClick={() => playChord("4")}>Chord 4</button>
-                <button className="chord-button" onClick={() => playChord("5")}>Chord 5</button>
-                <button className="chord-button" onClick={() => playChord("6")}>Chord 6</button>
-                <button className="chord-button" onClick={() => playChord("7")}>Chord 7</button>
+                <button className="chord-button" onClick={() => playChord("1")}>
+                    Chord 1
+                </button>
+                <button className="chord-button" onClick={() => playChord("2")}>
+                    Chord 2
+                </button>
+                <button className="chord-button" onClick={() => playChord("3")}>
+                    Chord 3
+                </button>
+                <button className="chord-button" onClick={() => playChord("4")}>
+                    Chord 4
+                </button>
+                <button className="chord-button" onClick={() => playChord("5")}>
+                    Chord 5
+                </button>
+                <button className="chord-button" onClick={() => playChord("6")}>
+                    Chord 6
+                </button>
+                <button className="chord-button" onClick={() => playChord("7")}>
+                    Chord 7
+                </button>
             </div>
 
             <h1 className="scaleInfo">

@@ -1,3 +1,10 @@
+:root {
+    --main-bg-color: cornflowerblue;
+    --main-bg-color: cornflowerblue;
+    --main-bg-color: cornflowerblue;
+  }
+
+
 body {
     margin: auto 0;
     background: rgb(170, 191, 132);
