@@ -15,7 +15,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/">
+                <Route path="/desktop">
                     <Route path="/desktop" element={< Desktop />} />
                     <Route path="/mobile" element={< Mobile />} />
                 </Route>
