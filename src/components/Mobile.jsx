@@ -1227,8 +1227,8 @@ function Mobile() {
                 <span className="chordValue">{chordValue}</span>
             </h1>
 
-            <h5 className="scaleInfo">{whichChord}</h5>
-            <h5 className="scaleInfo">Notes played: [{chordNotes}]</h5>
+            <h5 className="which-chord">{whichChord}</h5>
+            <h5 className="which-notes">Notes played: [{chordNotes}]</h5>
 
             <div className="circleParent">
                 <img
