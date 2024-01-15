@@ -40,7 +40,7 @@ body {
 
 .chord-button {
     border-radius: 10%;
-    background: black;
+    background: blue;
     color: white;
     margin: 2px;
     padding: 10px;
@@ -143,4 +143,15 @@ h3 {
 .circleimg {
     width: 55%;
     height: auto;
+}
+
+.select-scale {
+    text-align: center;
+    background:rgb(0, 0, 0);
+    display: table;
+    margin: 20px auto 20px auto;
+    padding: 10px;
+    border-radius: 25px;
+    color: rgb(170, 191, 132);
+    border: solid;
 }

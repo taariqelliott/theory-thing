@@ -1163,6 +1163,7 @@ function Mobile() {
         <div>
             <h1 className="title">Theory Thing</h1>
             <MiniNav />
+            <h4 className="select-scale">1. Select Root Note</h4>
 
             <div className="keys">
                 <h2 onClick={updateNoteValue}>C</h2>
@@ -1179,6 +1180,7 @@ function Mobile() {
                 <h2 onClick={updateNoteValue}>B</h2>
             </div>
 
+            <h4 className="select-scale">2. Select Scale</h4>
             <div className="minormajor">
                 <h3 className="scaleChoice" onClick={updateChordValue}>
                     major
@@ -1187,6 +1189,7 @@ function Mobile() {
                     minor
                 </h3>
             </div>
+            <h4 className="select-scale">3. Press To Play Chord</h4>
 
             <div className="mobile-buttons">
                 <button className="chord-button" onClick={() => playChord("1")}>Chord 1</button>
