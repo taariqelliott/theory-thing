@@ -79,11 +79,12 @@ body {
 }
 
 .chord-button:hover {
-    background-color: var(--hover);
+    background-color: var(--orange-light);
+    color: var(--black);
 }
 
 .chord-button:active {
-    background-color: var(--hover-active);
+    color: var(--black);
 }
 
 /* h2 {
