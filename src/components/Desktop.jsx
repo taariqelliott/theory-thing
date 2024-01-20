@@ -1176,23 +1176,26 @@ function Desktop() {
 
     return (
         <div>
-            <h1 className="title">Theory Thing</h1>
+            <div className="title">
+                <h1>Theory Thing</h1>
+                <h5 className="title-desktop">Desktop</h5>
+            </div>
             <MiniNav />
             <h4 className="select-scale">1. Select Root Note</h4>
 
             <div className="keys" onKeyDown={playChord}>
-                <h2 onClick={updateNoteValue}>C</h2>
-                <h2 onClick={updateNoteValue}>C#/Db</h2>
-                <h2 onClick={updateNoteValue}>D</h2>
-                <h2 onClick={updateNoteValue}>D#/Eb</h2>
-                <h2 onClick={updateNoteValue}>E</h2>
-                <h2 onClick={updateNoteValue}>F</h2>
-                <h2 onClick={updateNoteValue}>F#/Gb</h2>
-                <h2 onClick={updateNoteValue}>G</h2>
-                <h2 onClick={updateNoteValue}>G#/Ab</h2>
-                <h2 onClick={updateNoteValue}>A</h2>
-                <h2 onClick={updateNoteValue}>A#/Bb</h2>
-                <h2 onClick={updateNoteValue}>B</h2>
+                <button className="key-buttons" onClick={updateNoteValue}>C</button>
+                <button className="key-buttons" onClick={updateNoteValue}>C#/Db</button>
+                <button className="key-buttons" onClick={updateNoteValue}>D</button>
+                <button className="key-buttons" onClick={updateNoteValue}>D#/Eb</button>
+                <button className="key-buttons" onClick={updateNoteValue}>E</button>
+                <button className="key-buttons" onClick={updateNoteValue}>F</button>
+                <button className="key-buttons" onClick={updateNoteValue}>F#/Gb</button>
+                <button className="key-buttons" onClick={updateNoteValue}>G</button>
+                <button className="key-buttons" onClick={updateNoteValue}>G#/Ab</button>
+                <button className="key-buttons" onClick={updateNoteValue}>A</button>
+                <button className="key-buttons" onClick={updateNoteValue}>A#/Bb</button>
+                <button className="key-buttons" onClick={updateNoteValue}>B</button>
             </div>
 
             <h4 className="select-scale">2. Select Scale</h4>

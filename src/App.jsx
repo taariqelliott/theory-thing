@@ -1,12 +1,8 @@
-import * as Tone from "tone";
 
-// import { useEffect, useState } from "react";
-// import CicleOfFifths from "./images/circof5ths.webp";
 import {
     Route,
     BrowserRouter,
-    Routes,
-    Navigate
+    Routes
 } from "react-router-dom";
 import Desktop from "./components/Desktop";
 import Mobile from "./components/Mobile";
