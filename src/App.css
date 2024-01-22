@@ -43,8 +43,6 @@ body {
     border-radius: 20px;
     border: solid var(--black) 3px;
     margin-top: -10px;
-
-
 }
 
 .keys {
@@ -98,17 +96,6 @@ body {
     top: 3px;
     box-shadow: inset 0px 1px 0px var(--orange-dark), 0px 2px 0px 0px var(--green), 0px 5px 3px var(--black);
 }
-
-/* h2 {
-    border-radius: 10%;
-    background: var(--green);
-    color: var(--black);
-    margin: 2px;
-    padding: 10px;
-    cursor: pointer;
-    width: 70px;
-    text-align: center;
-} */
 
 .key-buttons {
     background-color: var(--green);
