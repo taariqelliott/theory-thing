@@ -79,7 +79,6 @@ body {
     width: 75px;
     border: black solid;
     border-radius: 10px;
-    background-image: linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
     box-shadow: inset 0px 1px 0px var(--orange-dark), 0px 5px 0px 0px var(--green), 0px 10px 5px var(--black);
     font-family: monospace;
     font-weight: 900;
@@ -108,7 +107,6 @@ body {
     width: 75px;
     border: black solid;
     border-radius: 10px;
-    background-image: linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
     box-shadow: inset 0px 1px 0px var(--green-hover), 0px 5px 0px 0px var(--orange), 0px 10px 5px var(--black);
     font-family: monospace;
     font-weight: 900;
@@ -125,7 +123,6 @@ body {
 
 .key-buttons:active {
     top: 3px;
-    background-image: linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
     box-shadow: inset 0px 1px 0px var(--green-hover), 0px 2px 0px 0px var(--orange), 0px 5px 3px var(--black);
 }
 
