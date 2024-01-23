@@ -1,23 +1,32 @@
-# THEORY THING
+# Theory Thing
 
 Welcome to Theory Thing!
 
-This is a tool that will help musicians figure out the basic chords for a particular key. 
-You will also be able to hear these chords by pressing the number keys 1 through 7 representing that particular chord in the key.
+Site Link: [Theory Thing](https://theorything.netlify.app/)
 
-For example, if you select "C" & "major" for the scale:
+## About Theory Thing
 
-1. Pressing "1" will play - C Major (I): C - E - G - B
+Theory Thing is a tool designed to make studying music theory enjoyable and accessible. Created by Taariq Elliott, this tool helps musicians figure out the basic chords for a particular key and allows you to hear these chords by pressing the number keys 1 through 7, representing each chord in the key.
 
-2. Pressing "2" will play - D Minor (ii): D - F - A - C
+## How It Works
 
-3. Pressing "3" will play - E Minor (iii): E - G - B - D
+### Desktop Version (Keyboard 1-7)
 
-4. Pressing "4" will play - F Major (IV): F - A - C - E
+- Press "1" to play C Major (I): C - E - G - B
+- Press "2" to play D Minor (ii): D - F - A - C
+- Press "3" to play E Minor (iii): E - G - B - D
+- Press "4" to play F Major (IV): F - A - C - E
+- Press "5" to play G Major (V): G - B - D - F
+- Press "6" to play A Minor (vi): A - C - E - G
+- Press "7" to play B Diminished (vii°): B - D - F - A
 
-5. Pressing "5" will play - G Major (V): G - B - D - F
+### Mobile Version (On-Screen Buttons 1-7)
 
-6. Pressing "6" will play - A Minor (vi): A - C - E - G
+- Ensure silent mode is turned off to hear the chords.
+- Use on-screen buttons 1-7 to play the corresponding chords.
 
-7. Pressing "7" will play - B Diminished (vii°): B - D - F - A
+## Why Theory Thing?
 
+"I created Theory Thing because studying music theory can sometimes be boring. With the right tools and foundation, learning becomes fun, especially when approached with a creative solution to common problems. Theory Thing is not just a tool; it's an invitation to make the journey of music theory exciting and accessible to everyone."
+
+Explore Theory Thing now and discover the joy of learning music theory in a whole new way!

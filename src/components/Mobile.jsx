@@ -1199,7 +1199,10 @@ function Mobile() {
                     minor
                 </h3>
             </div>
-            <h4 className="select-scale">3. Press To Play Chord</h4>
+            <div className="select-scale press">
+            <h4 >3. Press To Play Chord</h4>
+            <h6 className="silent">Make sure silent mode is off!</h6>
+            </div>
 
             <div className="mobile-buttons">
                 <button className="chord-button" onClick={() => playChord("1")}>
